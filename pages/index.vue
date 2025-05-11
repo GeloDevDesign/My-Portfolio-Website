@@ -4,6 +4,7 @@
   <div class="lg:px-26 md:px-12 px-6">
     <HeroSection />
     <LazyProjectSection hydrate-on-visible />
+    <LazySkillsSection hydrate-on-visible/>
   </div>
   <!--  <LazyHeroSection hydrate-on-visible @hydrated="onHydrate"/> -->
 </template>
