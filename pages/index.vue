@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="px-28">
+  <div class="lg:px-26 md:px-12 px-6">
     <HeroSection />
     <LazyProjectSection hydrate-on-visible />
   </div>

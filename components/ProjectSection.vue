@@ -20,15 +20,15 @@ const imageAttributes = ref([
 </script>
 
 <template>
-  <section id="project-section" class="w-full py-32">
+  <section id="project-section" class="w-full lg:py-32 md:py-24 py-20">
     <div class="space-y-10">
       <SectionHeading sectionName="RECENT PROJECT" />
-      <div class="flex gap-8">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
         <div
           v-for="(project, index) in imageAttributes"
           :key="index"
           :style="{ backgroundImage: `url(${project.backgroundImage})` }"
-          class="rounded-box w-1/3 h-96 p-4 rounded-xl bg-cover bg-center"
+          class="rounded-box w-full h-96 p-4 rounded-xl bg-cover bg-center"
         >
           <div class="w-full flex items-start justify-between">
             <h4 class="w-2/3">
