@@ -1,6 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-import tailwindcss from "@tailwindcss/vite";
-
+// nuxt.config.ts
 export default defineNuxtConfig({
   app: {
     head: {
@@ -16,10 +14,13 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  
+  // Replace the vite-specific tailwind configuration with the Nuxt module
+  modules: [
+    '@nuxtjs/tailwindcss'
+  ],
+  
   vite: {
-    plugins: [
-      tailwindcss(),
-    ],
     build: {
       sourcemap: true, // Enable sourcemaps for the build
     }
