@@ -60,22 +60,22 @@ const skillCategories = [
         <div
           v-for="(skill, skillIndex) in category.skills"
           :key="skillIndex"
-          class="flex-grow basis-16 lg:basis-24 max-w-32 "
+          class="  magic-hover magic-hover__square "
         >
           <img
             :src="skill.src"
             :alt="skill.alt"
-            class="p-2 bg-[#1E1E1E] rounded-lg w-full aspect-square max-w-20"
+            class="p-2 bg-[#1E1E1E] rounded-lg w-full aspect-square max-w-20 "
           />
         </div>
       </div>
 
       <!-- Back End skills - Flex layout with grow -->
-      <div v-else-if="index === 1" class="flex flex-wrap gap-4">
+      <div v-else-if="index === 1" class="flex flex-wrap gap-4 ">
         <div
           v-for="(skill, skillIndex) in category.skills"
           :key="skillIndex"
-          class="flex-grow basis-16 lg:basis-24 max-w-32"
+          class="magic-hover magic-hover__square"
         >
           <img
             :src="skill.src"
@@ -86,11 +86,11 @@ const skillCategories = [
       </div>
 
       <!-- Version Control skills - Flex layout with grow -->
-      <div v-else class="flex flex-wrap gap-4">
+      <div v-else class="flex flex-wrap gap-4 ">
         <div
           v-for="(skill, skillIndex) in category.skills"
           :key="skillIndex"
-          class="flex-grow basis-16 lg:basis-24 max-w-32"
+          class=" magic-hover  magic-hover__square"
         >
           <img
             :src="skill.src"
