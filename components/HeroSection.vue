@@ -3,7 +3,7 @@
 <template>
   <section
     id="hero-section"
-    class="text-white lg:mt-52 md:mt-44 mt-40 flex justify-center items-center h-1/2"
+    class="text-white lg:mt-48 md:mt-44 mt-40 "
   >
     <div class="max-w-7/8 space-y-6">
       <SubHeading subHeadingName="Hello! I’m Gelo" />

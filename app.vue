@@ -24,7 +24,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader/>
 
   <NuxtPage />
 </template>

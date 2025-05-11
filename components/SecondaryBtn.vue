@@ -13,7 +13,7 @@ const props = defineProps({
 
 <template>
   <NuxtLink
-    class="magic-hover magic-hover__square text-white px-8 py-4 rounded-full font-semibold"
+    class="magic-hover magic-hover__square text-white btn bg-[#1E1E1E] border-0 rounded-full font-medium"
     :to="route"
     >{{ buttonName }}</NuxtLink
   >

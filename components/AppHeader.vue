@@ -5,10 +5,11 @@ import { AlignJustify } from "lucide-vue-next";
 <template>
   <header class="flex justify-center w-full py-4 fixed top-0">
     <div
-      class="max-w-7/8 w-full flex bg-[#1E1E1E] justify-between items-center lg:p-4 md:p-3 p-2 rounded-full"
+      class="max-w-7/8 w-full flex bg-[#1E1E1E] justify-between items-center lg:p-3 md:p-2 p-1 rounded-full"
     >
-      <div class="w-10 h-10 bg-white rounded-full"></div>
-      <nav class="lg:block md:hidden hidden">
+      <img src="/gelowebdev.svg" class="w-18" alt="gelowebdev logo" />
+
+      <nav class="lg:block md:hidden hidden space-x-2">
         <SecondaryBtn buttonName="Experiences" route="/about" />
         <SecondaryBtn buttonName="Projects" route="/about" />
         <SecondaryBtn buttonName="Contact" route="/about" />
