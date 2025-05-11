@@ -5,10 +5,10 @@ export default defineNuxtConfig({
  
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css','tailwindcss'],
   vite: {
     plugins: [
-      tailwindcss(),
+    
     ],
     build: {
       sourcemap: true, // Enable sourcemaps for the build
