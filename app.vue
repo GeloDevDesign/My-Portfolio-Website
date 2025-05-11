@@ -1,6 +1,9 @@
 <script setup>
 import { onMounted } from "vue";
 
+
+// FIX THIS USE NOT IMPORT SRC
+// USE NUXT IMAGE
 onMounted(() => {
   const script = document.createElement("script");
   script.src =
