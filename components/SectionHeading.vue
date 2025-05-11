@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <h3 class="text-3xl font-semibold">
+  <h3 class="lg:text-3xl md:text-2xl text-xl font-semibold">
     {{ sectionName }}
   </h3>
 </template>

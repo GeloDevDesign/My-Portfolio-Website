@@ -28,7 +28,7 @@ const imageAttributes = ref([
           v-for="(project, index) in imageAttributes"
           :key="index"
           :style="{ backgroundImage: `url(${project.backgroundImage})` }"
-          class="rounded-box w-full h-96 p-4 rounded-xl bg-cover bg-center"
+          class="animate-fade-up animate-once animate-delay-100 rounded-box w-full h-96 p-4 rounded-xl bg-cover bg-center magic-hover  magic-hover__square "
         >
           <div class="w-full flex items-start justify-between">
             <h4 class="w-2/3">

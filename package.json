@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-     "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.6",
@@ -16,6 +16,7 @@
     "lucide-vue-next": "^0.509.0",
     "nuxt": "^3.17.2",
     "tailwindcss": "^4.1.6",
+    "tailwindcss-animated": "^2.0.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.1"
   },

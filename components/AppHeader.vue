@@ -3,7 +3,7 @@ import { AlignJustify } from "lucide-vue-next";
 </script>
 
 <template>
-  <header class="flex justify-center w-full lg:py-4 md:py-4 py-4 fixed top-0">
+  <header class="flex justify-center w-full lg:py-4 md:py-4 py-4 fixed top-0 z-90">
     <div
       class="lg:max-w-7/8 md:w-8/9 w-9/10 flex bg-[#1E1E1E] justify-between items-center lg:p-3 md:p-2 p-2 rounded-full"
     >
