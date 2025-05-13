@@ -41,5 +41,6 @@ import { AlignJustify } from "lucide-vue-next";
         </div>
       </div>
     </div>
+    
   </header>
 </template>

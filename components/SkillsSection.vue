@@ -1,4 +1,14 @@
 <script setup>
+
+
+
+
+
+
+
+
+
+
 // Define your skills data
 const skillCategories = [
   {

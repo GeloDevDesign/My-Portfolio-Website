@@ -19,8 +19,9 @@ onMounted(() => {
 </script>
 
 <template>
+  
   <AppHeader />
-
+    <MaintenanceBanner />
   <NuxtPage />
 </template>
 
