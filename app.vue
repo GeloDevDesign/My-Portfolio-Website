@@ -1,11 +1,9 @@
 <script setup>
 import { onMounted } from "vue";
 
-
 // FIX THIS USE NOT IMPORT SRC
 // USE NUXT IMAGE
 // USE SEO META TAGS FOR EACH SECTION
-
 
 onMounted(() => {
   const script = document.createElement("script");
@@ -25,17 +23,25 @@ onMounted(() => {
   };
   document.body.appendChild(script);
 });
-
-
 </script>
 
 <template>
-  <AppHeader/>
+  <!-- <ClientOnly>
+    <AppHeader />
 
-  <NuxtPage />
+    <NuxtPage />
+    <template #fallback>
+     
+      
+    </template>
+  </ClientOnly> -->
+  <div class="w-full h-screen flex justify-center items-center flex-col">
+        <img src="/gelowebdev.svg" class="w-32" alt="gelowebdev logo" />
+        <div class="flex flex-col items-center mt-8">
+          <span>Loading please wait ...</span>
+          <span class="loading loading-dots  w-13"></span>
+        </div>
+      </div>
 </template>
 
-<style>
-
-
-</style>
+<style></style>
