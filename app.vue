@@ -26,22 +26,20 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- <ClientOnly>
+  <ClientOnly>
     <AppHeader />
 
     <NuxtPage />
     <template #fallback>
-     
-      
-    </template>
-  </ClientOnly> -->
-  <div class="w-full h-screen flex justify-center items-center flex-col">
+      <div class="w-full h-screen flex justify-center items-center flex-col">
         <img src="/gelowebdev.svg" class="w-32" alt="gelowebdev logo" />
         <div class="flex flex-col items-center mt-8">
           <span>Loading please wait ...</span>
-          <span class="loading loading-dots  w-13"></span>
+          <span class="loading loading-dots w-13"></span>
         </div>
       </div>
+    </template>
+  </ClientOnly>
 </template>
 
 <style></style>
