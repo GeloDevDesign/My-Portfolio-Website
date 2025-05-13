@@ -7,7 +7,7 @@ import { AlignJustify } from "lucide-vue-next";
     <div
       class="lg:max-w-7/8 md:w-8/9 w-9/10 flex bg-[#1E1E1E] justify-between items-center lg:p-3 md:p-2 p-2 rounded-full"
     >
-      <img src="/gelowebdev.svg" class="w-18" alt="gelowebdev logo" />
+      <img src="/gelowebdev.svg" class="w-18" alt="gelowebdevlogo" />
 
       <nav class="lg:block md:hidden hidden space-x-2">
         <SecondaryBtn buttonName="Experiences" route="/about" />
