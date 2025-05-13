@@ -1,11 +1,8 @@
 <script setup>
 import { onMounted, onUnmounted } from "vue";
 
-// FIX THIS USE NOT IMPORT SRC
 // USE NUXT IMAGE
 // USE SEO META TAGS FOR EACH SECTION
-
-
 
 onMounted(() => {
   const options = {
@@ -18,6 +15,7 @@ onMounted(() => {
   };
   magicMouse(options);
 });
+
 </script>
 
 <template>
