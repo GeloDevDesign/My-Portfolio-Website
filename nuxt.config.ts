@@ -29,7 +29,7 @@ export default defineNuxtConfig({
     preset: 'node-server'
   },
   devServer:{
-    loadingTemplate: () => '<div class="text-white z-99 w-full h-32">Custom Loading...</div>'
+    loadingTemplate: () => "@/components/Loader.vue"
   }
 
 })
