@@ -28,5 +28,8 @@ export default defineNuxtConfig({
    nitro: {
     preset: 'node-server'
   },
-    spaLoadingTemplate: false,
+  devServer:{
+    loadingTemplate: () => '<div class="text-white z-99 w-full h-32">Custom Loading...</div>'
+  }
+
 })

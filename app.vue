@@ -19,7 +19,7 @@ onMounted(() => {
 </script>
 
 <template>
-     <NuxtLoadingIndicator />
+    
   <AppHeader />
     <MaintenanceBanner />
   <NuxtPage />
