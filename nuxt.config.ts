@@ -28,8 +28,8 @@ export default defineNuxtConfig({
    nitro: {
     preset: 'node-server'
   },
-  devServer:{
-    loadingTemplate: () => "@/components/Loader.vue"
-  }
+ ssr: false,
+  spaLoadingTemplate: 'spa-loading-template.html',
+
 
 })
