@@ -1,9 +1,10 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
- 
+  
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+  
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [
@@ -22,9 +23,10 @@ export default defineNuxtConfig({
         "script": [{
         src:"https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"
       }],
-    }
+    },
   },
    nitro: {
     preset: 'node-server'
-  }
+  },
+    spaLoadingTemplate: false,
 })
