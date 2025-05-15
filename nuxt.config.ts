@@ -28,8 +28,8 @@ export default defineNuxtConfig({
    nitro: {
     preset: 'node-server'
   },
- ssr: false,
-  spaLoadingTemplate: 'spa-loading-template.html',
+  //  ssr: false,
+  // spaLoadingTemplate: 'spa-loading-template.html',
 
 
 })
