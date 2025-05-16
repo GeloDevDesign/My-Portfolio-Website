@@ -65,7 +65,7 @@ onMounted(() => {
 
 <template>
   <section id="skills-section" class=" lg:py-32 md:py-24 py-20 ">
-  <div class="w-full flex flex-col items-center justify-center">
+  <div class="w-full flex flex-col items-center justify-center text-center">
       <SectionHeading sectionName="The Tools I Build With"  />
       <ParagraphText paragraphText="Proven technologies I've mastered through real projects and problem-solving
 

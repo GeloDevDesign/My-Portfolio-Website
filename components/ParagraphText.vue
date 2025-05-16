@@ -10,5 +10,7 @@ const props = defineProps({
 </script>
 
 <template>
-   <p class="text-gray-400 text-medium lg:text-base md:text-base text-sm mt-2">{{ paragraphText }}</p>
+ 
+     <p class="text-gray-400 text-medium lg:text-base md:text-base text-sm mt-2 text-center px-6">{{ paragraphText }}</p>
+  
 </template>
