@@ -25,4 +25,5 @@ onMounted(() => {
   <NuxtPage />
 </template>
 
-<style></style>
+<style>
+</style>
