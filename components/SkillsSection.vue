@@ -35,7 +35,7 @@ onMounted(() => {
     const containerWidth = container.scrollWidth / 3; // Since we tripled the items
     
     let scrollPosition = 0;
-    const scrollSpeed = 1.5; // Adjust speed as needed
+    const scrollSpeed = 1.3; // Adjust speed as needed
     
     function animateScroll() {
       scrollPosition += scrollSpeed;
@@ -65,8 +65,11 @@ onMounted(() => {
 
 <template>
   <section id="skills-section" class=" lg:py-32 md:py-24 py-20 ">
-  <div class="w-full flex items-center justify-center">
-      <SectionHeading sectionName="TECHNICAL SKILLS"  />
+  <div class="w-full flex flex-col items-center justify-center">
+      <SectionHeading sectionName="The Tools I Build With"  />
+      <ParagraphText paragraphText="Proven technologies I've mastered through real projects and problem-solving
+
+"/>
   </div>
     
     <div class="relative group mt-12">
