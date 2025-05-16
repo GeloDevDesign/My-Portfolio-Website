@@ -20,10 +20,8 @@ const imageAttributes = ref([
 </script>
 
 <template>
-  <section id="project-section" class="w-full lg:py-32 md:py-24 py-20">
-    <div class="space-y-10">
-      <SectionHeading sectionName="DEVELOPMENT PROJECTS" />
-      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 w-full">
+  <section id="project-section" class="w-full lg:py-14 md:py-12 py-10">
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 w-full">
         <div
           v-for="(project, index) in imageAttributes"
           :key="index"
@@ -42,6 +40,5 @@ const imageAttributes = ref([
           </div>
         </div>
       </div>
-    </div>
   </section>
 </template>
