@@ -8,9 +8,9 @@ import { AlignJustify } from "lucide-vue-next";
       class="lg:max-w-7/8 md:w-8/9 w-9/10 flex bg-[#1E1E1E] justify-between items-center lg:p-3 md:p-2 p-2 rounded-full"
     >
       <img src="/gelowebdev.svg" class="w-18" alt="gelowebdevlogo" />
-
       <nav class="lg:block md:hidden hidden space-x-2">
-        <SecondaryBtn buttonName="Experiences" route="/about" />
+        <SecondaryBtn buttonName="Experiences" route="#experience-section" :isScroll="true" />
+        <SecondaryBtn buttonName="Tech Stack" route="#skills-section" :isScroll="true" />
         <SecondaryBtn buttonName="Projects" route="#project-section" :isScroll="true" />
         <SecondaryBtn buttonName="Contact" route="#contact" :isScroll="true" />
         <PrimaryBtn buttonName="Let's Talk" route="/" />
@@ -35,7 +35,7 @@ import { AlignJustify } from "lucide-vue-next";
               class="menu bg-base-100 border-r-1 border-white text-base-content min-h-full w-3/4 p-4"
             >
               <!-- Sidebar content here -->
-              <li><a href="/about">Experiences</a></li>
+              <li><a href="#experience-section" @click="scrollToSection('#experience-section')" >Experiences</a></li>
               <li><a href="#project-section" @click="scrollToSection('#project-section')">Projects</a></li>
               <li><a href="#contact" @click="scrollToSection('#contact')">Contact</a></li>
               <li><a href="/">Let's Talk</a></li>
