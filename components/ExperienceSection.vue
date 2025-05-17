@@ -56,9 +56,9 @@ const experiences = [
           class="flex flex-col justify-between h-full lg:gap-10 md:gap-8 gap-6"
         >
           <div class="flex flex-col gap-4">
-            <h5 class="lg:text-lg md:text-lg text-base font-semibold">
+            <h4 class="lg:text-lg md:text-lg text-base font-semibold">
               {{ experience.title }}
-            </h5>
+            </h4>
             <div class="flex gap-2 items-start h-full p-0">
               <div>
                   <Building2 size="16"/>

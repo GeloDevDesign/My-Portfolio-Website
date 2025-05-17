@@ -5,7 +5,7 @@ const props = defineProps({
     required: true,
   },
 });
-</script>
+</script> 
 
 <template>
   <h2 class="lg:text-3xl md:text-2xl text-xl">{{ subHeadingName }}</h2>
