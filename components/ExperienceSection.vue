@@ -27,7 +27,7 @@ const experiences = [
     title: "Hello World",
     description: "Wrote my first line of code",
     year: "2023",
-    tech_stack: [{ name: "2023" }, { name: "Visual Studio Code" }],
+    tech_stack: [{ name: "2023" }],
   },
   {
     title: "BS Information Technology",
