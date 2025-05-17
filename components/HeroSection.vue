@@ -10,10 +10,10 @@
       <Header
         headerName="A Full-stack Developer Enjoys Crafting Complete Web Applications."
       />
-      <oll class="space-y-2">
+      <ol class="space-y-2">
         <li class="lg:text-base md:text-base text-sm">Laravel and Vue Js Developer</li>
         <li class="lg:text-base md:text-base text-sm">1 year of web development experience</li>
-      </oll>
+      </ol>
     </div>
   </section>
 </template>
