@@ -51,7 +51,7 @@ const experiences = [
       <div 
         v-for="(experience, index) in experiences" 
         :key="index" 
-        class="w-full bg-[#1E1E1E] p-6 space-y-4 rounded-lg"
+        class="w-full bg-[#1E1E1E] p-6 space-y-4 rounded-lg magic-hover magic-hover__square"
       >
         <div class="flex justify-between items-center">
           <h5 class="text-lg">{{ experience.title }}</h5>
@@ -66,7 +66,7 @@ const experiences = [
           <div 
             v-for="(tech, techIndex) in experience.tech_stack"
             :key="techIndex" 
-            class="badge badge-neutral badge-sm badge-outline border-gray-300 text-gray-300"
+            class="badge badge-neutral badge-sm badge-outline border-gray-300 text-gray-300 magic-hover magic-hover__square"
           >
             {{ tech.name }}
           </div>
