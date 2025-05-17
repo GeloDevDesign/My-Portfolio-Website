@@ -12,7 +12,7 @@ import { AlignJustify } from "lucide-vue-next";
         <SecondaryBtn buttonName="Experiences" route="#experience-section" :isScroll="true" />
         <SecondaryBtn buttonName="Tech Stack" route="#skills-section" :isScroll="true" />
         <SecondaryBtn buttonName="Projects" route="#project-section" :isScroll="true" />
-        <SecondaryBtn buttonName="Contact" route="#contact-section" :isScroll="true" />
+        
         <PrimaryBtn buttonName="Let's Talk" route="/" />
       </nav>
       <div class="lg:hidden md:block block">
@@ -37,7 +37,7 @@ import { AlignJustify } from "lucide-vue-next";
               <!-- Sidebar content here -->
               <li><a href="#experience-section" @click="scrollToSection('#experience-section')" >Experiences</a></li>
               <li><a href="#project-section" @click="scrollToSection('#project-section')">Projects</a></li>
-              <li><a href="#contact" @click="scrollToSection('#contact')">Contact</a></li>
+             
               <li><a href="/">Let's Talk</a></li>
             </ul>
           </div>
