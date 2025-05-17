@@ -82,6 +82,8 @@ onMounted(() => {
 
       <!-- Infinite scroll container -->
       <div
+       data-aos="fade-up"
+       data-aos-anchor-placement="top-center"
         ref="scrollContainer"
         class="flex overflow-x-hidden no-scrollbar py-4 space-x-4"
       >

@@ -19,6 +19,7 @@ export default defineNuxtConfig({
      },
      link: [
        { rel: 'icon', type: 'image/x-icon', href: '/gelowebdev.svg' },
+       { rel: 'stylesheet', type: '', href: 'https://unpkg.com/aos@next/dist/aos.css' },
      ],
        "script": [{
        src:"https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"

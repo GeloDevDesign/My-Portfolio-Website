@@ -24,7 +24,8 @@ const imageAttributes = ref([
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 w-full">
       <div
         v-for="(project, index) in imageAttributes"
-        data-aos="fade-left"
+        data-aos="fade-right"
+       
         :key="index"
         :style="{ backgroundImage: `url(${project.backgroundImage})` }"
         class="animate-fade-up animate-once animate-delay-100 rounded-box w-full h-96 p-4 rounded-xl bg-cover bg-center magic-hover magic-hover__square"

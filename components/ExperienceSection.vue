@@ -49,6 +49,7 @@ const experiences = [
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
       <div
         v-for="(experience, index) in experiences"
+         data-aos="fade-left"
         :key="index"
         class="w-full bg-[#1E1E1E] lg:p-6 md:p-6 p-4 space-y-4 rounded-lg magic-hover magic-hover__square"
       >
