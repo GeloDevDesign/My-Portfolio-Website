@@ -39,7 +39,7 @@ const experiences = [
 </script>
 
 <template>
-  <section id="experience-section" class="w-full lg:py-24 md:py-20 md:space-y-14 space-y-8">
+  <section id="experience-section" class="w-full lg:py-24 md:py-20 md:space-y-14 space-y-8 mb-10">
     <div class="space-y-2">
       <SectionHeading sectionName="WORK & WINS" />
       <p class="text-gray-400 text-medium lg:max-w-2/3 md:w-full w-full lg:text-base md:text-base text-sm">

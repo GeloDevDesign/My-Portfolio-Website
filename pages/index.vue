@@ -13,7 +13,7 @@
     
     <LazyExperienceSection hydrate-on-visible />
   </div>
-
+   <LazyFooter hydrate-on-visible />
   <!--  <LazyHeroSection hydrate-on-visible @hydrated="onHydrate"/> -->
 </template>
 

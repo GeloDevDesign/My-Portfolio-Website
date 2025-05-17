@@ -12,7 +12,7 @@ import { AlignJustify } from "lucide-vue-next";
         <SecondaryBtn buttonName="Experiences" route="#experience-section" :isScroll="true" />
         <SecondaryBtn buttonName="Tech Stack" route="#skills-section" :isScroll="true" />
         <SecondaryBtn buttonName="Projects" route="#project-section" :isScroll="true" />
-        <SecondaryBtn buttonName="Contact" route="#contact" :isScroll="true" />
+        <SecondaryBtn buttonName="Contact" route="#contact-section" :isScroll="true" />
         <PrimaryBtn buttonName="Let's Talk" route="/" />
       </nav>
       <div class="lg:hidden md:block block">

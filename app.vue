@@ -21,7 +21,7 @@ onMounted(() => {
 <template>
   
   <AppHeader />
-    <MaintenanceBanner />
+    <!-- <MaintenanceBanner /> -->
   <NuxtPage />
 </template>
 
