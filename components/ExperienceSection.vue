@@ -12,14 +12,14 @@ const experiences = [
   {
     title: "Freelance Fullstack Developer",
     description:
-      "No Company name freelance work",
+      "No company name freelance work",
     year: "2024",
     tech_stack: [{ name: "2024-2025" }],
   },
   {
     title: "Freelance Website Designer",
     description:
-      "No Company name freelance work",
+      "No company name freelance work",
     year: "2023",
     tech_stack: [{ name: "2024" }],
   },

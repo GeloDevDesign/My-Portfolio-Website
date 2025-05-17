@@ -33,14 +33,13 @@ const imageAttributes = ref([
             {{ project.projectTitle }}
           </h4>
           <button
-            
             class="magic-hover btn magic-hover__square rounded-full btn-ghost border-1 border-white h-12 w-12"
+            aria-label="View Project"
           >
             <MoveUpRight size="32" />
           </button>
         </div>
       </div>
     </div>
-   
   </section>
 </template>
