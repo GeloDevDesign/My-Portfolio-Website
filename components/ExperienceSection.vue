@@ -1,105 +1,77 @@
-<script setup></script>
+<script setup>
+// Create an array of experience objects
+const experiences = [
+  {
+    title: "Web Developer",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laborum rem tempore expedita, quis dolorum",
+    year: "2025",
+    tech_stack: [
+      { name: "Vue.js" },
+      { name: "Tailwind CSS" },
+      { name: "Node.js" }
+    ]
+  },
+  {
+    title: "Frontend Engineer",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laborum rem tempore expedita, quis dolorum",
+    year: "2024",
+    tech_stack: [
+      { name: "React" },
+      { name: "TypeScript" },
+      { name: "SCSS" }
+    ]
+  },
+  {
+    title: "UI/UX Designer",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laborum rem tempore expedita, quis dolorum",
+    year: "2023",
+    tech_stack: [
+      { name: "Figma" },
+      { name: "Adobe XD" },
+      { name: "Sketch" }
+    ]
+  },
+   {
+    title: "UI/UX Designer",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laborum rem tempore expedita, quis dolorum",
+    year: "2023",
+    tech_stack: [
+      { name: "Figma" },
+      { name: "Adobe XD" },
+      { name: "Sketch" }
+    ]
+  }
+];
+</script>
 
 <template>
-  <section class=" w-full lg:py-32 md:py-24 py-20 space-y-20">
-     <SectionHeading sectionName="EXPERIENCES" />
-      <ul class="timeline timeline-vertical">
-        <li>
-          <div class="timeline-start timeline-box">
-            First Macintosh computer
+  <section class="w-full lg:py-32 md:py-24 lg:space-y-20 md:space-y-14 space-y-8">
+    <SectionHeading sectionName="EXPERIENCES" />
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+      <div 
+        v-for="(experience, index) in experiences" 
+        :key="index" 
+        class="w-full bg-[#1E1E1E] p-6 space-y-4 rounded-lg"
+      >
+        <div class="flex justify-between items-center">
+          <h5 class="text-lg">{{ experience.title }}</h5>
+          <span class="text-sm">{{ experience.year }}</span>
+        </div>
+        <p class="text-gray-400 text-medium lg:text-sm md:text-sm text-xs">
+          {{ experience.description }}
+        </p>
+        <div class="space-x-2 flex flex-wrap gap-2">
+         
+          <!-- Tech stack badges -->
+          <div 
+            v-for="(tech, techIndex) in experience.tech_stack"
+            :key="techIndex" 
+            class="badge badge-neutral badge-sm badge-outline border-gray-300 text-gray-300"
+          >
+            {{ tech.name }}
           </div>
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="h-5 w-5"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div class="timeline-start timeline-box">iMac</div>
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="h-5 w-5"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div class="timeline-start timeline-box">iPod</div>
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="h-5 w-5"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div class="timeline-start timeline-box">iPhone</div>
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="h-5 w-5"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div class="timeline-start timeline-box">Apple Watch</div>
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="h-5 w-5"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-        </li>
-      </ul>
-   
+        </div>
+      </div>
+    </div>
   </section>
 </template>
