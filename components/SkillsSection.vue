@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref } from "vue";
 
 const skills = [
   { src: "/1.svg", alt: "Frontend Skill 1", category: "Front End" },
@@ -33,59 +33,62 @@ onMounted(() => {
   if (scrollContainer.value) {
     const container = scrollContainer.value;
     const containerWidth = container.scrollWidth / 3; // Since we tripled the items
-    
+
     let scrollPosition = 0;
     const scrollSpeed = 1.3; // Adjust speed as needed
-    
+
     function animateScroll() {
       scrollPosition += scrollSpeed;
-      
+
       // Reset to start when reaching the duplicated section
       if (scrollPosition >= containerWidth * 2) {
         scrollPosition = 0;
       }
-      
+
       container.scrollLeft = scrollPosition;
       requestAnimationFrame(animateScroll);
     }
-    
+
     // Pause on hover
-    container.addEventListener('mouseenter', () => {
+    container.addEventListener("mouseenter", () => {
       scrollSpeed = 0;
     });
-    
-    container.addEventListener('mouseleave', () => {
+
+    container.addEventListener("mouseleave", () => {
       scrollSpeed = 1;
     });
-    
+
     animateScroll();
   }
 });
 </script>
 
 <template>
-  <section id="skills-section" class=" lg:py-32 md:py-24 py-20 ">
-  <div class="w-full flex flex-col items-center justify-center text-center">
-      <SectionHeading sectionName="The Tools I Build With"  />
-      <ParagraphText paragraphText="Proven technologies I've mastered through real projects and problem-solving
+  <section id="skills-section" class="lg:py-32 md:py-24 py-20">
+    <div class="w-full flex flex-col items-center justify-center text-center">
+      <SectionHeading sectionName="The Tools I Build With" />
+      <ParagraphText
+        paragraphText="Proven technologies I've mastered through real projects and problem-solving
 
-"/>
-  </div>
-    
+"
+      />
+    </div>
+
     <div class="relative group mt-12">
       <!-- Left fade effect -->
-      <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#0A0A0A] to-transparent z-10 pointer-events-none"></div>
-      
+      <div
+        class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#0A0A0A] to-transparent z-10 pointer-events-none"
+      ></div>
+
       <!-- Infinite scroll container -->
-      <div 
+      <div
         ref="scrollContainer"
         class="flex overflow-x-hidden no-scrollbar py-4 space-x-4"
       >
-        <div 
-          v-for="(skill, index) in skillsDuplicated" 
+        <div
+          v-for="(skill, index) in skillsDuplicated"
           :key="index"
           class="flex-shrink-0 magic-hover magic-hover__square"
-        
         >
           <img
             :src="skill.src"
@@ -95,9 +98,11 @@ onMounted(() => {
           />
         </div>
       </div>
-      
+
       <!-- Right fade effect -->
-      <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#0A0A0A] to-transparent z-10 pointer-events-none"></div>
+      <div
+        class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#0A0A0A] to-transparent z-10 pointer-events-none"
+      ></div>
     </div>
   </section>
 </template>
