@@ -14,6 +14,8 @@ onMounted(() => {
     outerHeight: 30,
   };
   magicMouse(options);
+  
+  AOS.init();
 });
 
 </script>

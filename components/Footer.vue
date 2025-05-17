@@ -27,7 +27,7 @@ import { Mail, Github, Linkedin } from "lucide-vue-next";
               angeloserenuela524@gmail.com
             </div>
           </div>
-          <button class="btn btn-ghost  "><Mail size="24" class="sm:size-24 md:size-8 lg:size-10" /></button>
+          <button class="btn btn-ghost" aria-label="Email Info"><Mail size="24" class="sm:size-24 md:size-8 lg:size-10" /></button>
         </div>
       
 
